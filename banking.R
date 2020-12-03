@@ -31,3 +31,8 @@ banking <- cbind(banking, generations)
 banking
 View(banking)
 table(banking$poutcome, banking$generations)
+qt(c(0.025, 0.975), df=5)
+sqrt(5)
+qnorm(0.025, mean = 0, sd= 1/2, lower.tail = TRUE)
+help(qt)
+pf(0.05, 2, 60)
