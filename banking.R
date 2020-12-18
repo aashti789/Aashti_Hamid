@@ -1,12 +1,12 @@
 install.packages('readxl')
 library(readxl)
-banking <-  read.csv('C:/R dataset/Demo 1_ Identifying Data Structures.csv')
+banking <-  read.csv('C:/R dataset/Banking.csv')
 View(banking)
 str(banking)
 View(mtcars)
 library(dplyr)
 select(mtcars, mpg, wt)
-v1 <- c(mtcars$mpg, mtcars$wt),
+v1 <- c(mtcars$mpg, mtcars$wt)
 v1
 mtcars[,c(1,6)]
 mtcars[, c(1:6)]

@@ -28,3 +28,9 @@ confusionMatrix(table(iris_test$Species, pred_lin))
 pred_rad <- predict(iris_rad_model, iris_test)
 confusionMatrix(iris_test$Species, pred_rad)
 #SVM model using linear or radial as kernels gave exactly same results.
+df <- pred_lin==iris_test$Species
+View(df)
+prop.table(df)
+prop.table(table(df))
+df1 <- pred_rad==iris_test$Species
+prop.table(table(df1))
